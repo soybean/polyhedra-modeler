@@ -64,9 +64,9 @@ export function sonobeSubdivide(
     [5, 0, 6],  // mCA -> a -> apex  (unit 3, half b)
   ];
 
-  // Color each pair of triangles as one sonobe unit
-  // 3 units per face, 2 triangles per unit
-  const colors = [0, 1, 2, 0, 1, 2];
+  // Color each pyramid face as a single solid color
+  // 3 pyramid faces, 2 triangles per face
+  const colors = [0, 0, 1, 1, 2, 2];
 
   return { vertices, triangles, colors };
 }
